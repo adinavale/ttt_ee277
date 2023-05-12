@@ -141,6 +141,7 @@ void UART_ISR(void)
 			
 			if (key == ONE){
 				printf("Key 1 pressed\n");
+				display_X(10, 10);
 			}else if(key == TWO){
 				printf("key 2 pressed\n");
 			}else{

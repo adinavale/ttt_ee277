@@ -109,3 +109,23 @@ char random (char min, char max){
 	return i;
 }
 
+//---------------------------------------------
+// Draws an X on the tic-tac-toe grid
+//---------------------------------------------
+
+void display_X(int x, int y){
+	//Diagonal going from top left to bottom right
+	int cur_row = 0;
+	int i;
+	for(i = 0; i < x + 15; i++){
+		VGA_plot_pixel(i + x, y + cur_row, WHITE);
+		cur_row++;
+	}
+
+	//Diagonal going from bottom left to top right
+	cur_row = y + 14;
+	for(i = 0; i < x + 15; i++){
+		VGA_plot_pixel(i + x, y + cur_row, WHITE);
+		cur_row--;
+	}
+}
