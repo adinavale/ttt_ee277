@@ -1,0 +1,10 @@
+.\objects\main.o: ..\Files\Software\Application\main.c
+.\objects\main.o: ..\Files\Software\device\EDK_CM0.h
+.\objects\main.o: ..\Files\Software\core\core_cm0.h
+.\objects\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\main.o: ..\Files\Software\core\core_cmInstr.h
+.\objects\main.o: ..\Files\Software\core\core_cmFunc.h
+.\objects\main.o: ..\Files\Software\device\edk_driver.h
+.\objects\main.o: ..\Files\Software\core\core_cm0.h
+.\objects\main.o: ..\Files\Software\device\edk_api.h
+.\objects\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
