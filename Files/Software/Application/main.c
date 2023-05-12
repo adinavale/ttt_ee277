@@ -27,18 +27,7 @@ static int score1;
 static int score2;
 static int snake1_has_moved;
 static int snake2_has_moved;
-
-static int gamespeed;
-static int speed_table[10]={6,9,12,15,20,25,30,35,40,100};
 //static int speed_table[10]={6,6,6,6,6,6,6,6,6,6}; //just to simulate self body hit test case
-
-// Structure define
-// Target cordinates and variable to indicate whether target is hit
-struct target{
-	int x;
-	int y;
-	int reach;
-	}target;
 
 
 //---------------------------------------------
@@ -49,19 +38,12 @@ void Game_Init(void)
 {	
 	//Draw a game region
 	clear_screen();
-	
-	rectangle(left_boundary,top_boundary,right_boundary,top_boundary+boundary_thick,BLUE);//draws top boundary
-	rectangle(left_boundary,top_boundary,left_boundary+boundary_thick,bottom_boundary,BLUE);//draws left boundary
-	rectangle(left_boundary,bottom_boundary,right_boundary,bottom_boundary+boundary_thick,BLUE);//draws bottom boundary
-	rectangle(right_boundary,top_boundary,right_boundary+boundary_thick,bottom_boundary+boundary_thick,BLUE);//draws right boundary
 
 	//Initialise data	
 	score1 = 0;
 	score2 = 0;
-	gamespeed=speed_table[score1];		
 	
 	//Initialise timer (load value, prescaler value, mode value)
-	timer_init((Timer_Load_Value_For_One_Sec/gamespeed),Timer_Prescaler,1);	
 	timer_enable();
 	
 	//Print instructions on text console of VGA
