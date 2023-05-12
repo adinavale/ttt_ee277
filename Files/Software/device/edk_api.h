@@ -42,6 +42,16 @@
 #define RESET 0x72
 #define QUIT 0x71
 #define PAUSE 0x20
+#define ZERO 0x30
+#define ONE 0x31
+#define TWO 0x32
+#define THREE 0x33
+#define FOUR 0x34
+#define FIVE 0x35
+#define SIX 0x36
+#define SEVEN 0x37
+#define EIGHT 0x38
+#define NINE 0x39
 
 //--------------------------------------------------------
 // API functions declaration
