@@ -25,9 +25,8 @@ static int i,j;
 static char key;
 static int score1;
 static int score2;
-static int snake1_has_moved;
-static int snake2_has_moved;
-//static int speed_table[10]={6,6,6,6,6,6,6,6,6,6}; //just to simulate self body hit test case
+static int col, row;
+static int active_player;
 
 
 //---------------------------------------------
@@ -42,32 +41,39 @@ void Game_Init(void)
 	//Initialise data	
 	score1 = 0;
 	score2 = 0;
+	active_player = 1; //player 1 goes first
 	
 	//Initialise timer (load value, prescaler value, mode value)
 	timer_enable();
 	
 	//Print instructions on text console of VGA
-	printf("\n------- Snake Game --------");
-	printf("\nCentre btn ..... hard reset");
-	printf("\nKeyboard r ..... soft reset");
-	printf("\n   Player 1:Red Snake   ");//player 1
-	printf("\nKeyboard w ........ move up");//player 1
-	printf("\nKeyboard s ...... move down");//player 1
-	printf("\nKeyboard a ...... move left");//player 1
-	printf("\nKeyboard d ..... move right");//player 1
-	printf("\n   Player 2:Green Snake   ");//player 2
-	printf("\nKeyboard i ........ move up");//player 2
-	printf("\nKeyboard k ...... move down");//player 2
-	printf("\nKeyboard j ...... move left");//player 2
-	printf("\nKeyboard l ..... move right");//player 2
-	printf("\nKeyboard space ...... pause");
-	printf("\n---------------------------");	
-	printf("\nTo run the game, make sure:");
-	printf("\n*UART terminal is activated");
-	printf("\n*UART baud rate is 19200bps");
-	printf("\n*Keyboard is in lower case");
-	printf("\n---------------------------");
-	printf("\nPress any key to start\n");
+	printf("\n----- Tic Tac Toe Game -----");
+	printf("\n---  Get three in a row ----");
+	printf("\n---  Player 1 goes first ---");
+	printf("\n            1|2|3           ");
+	printf("\n            4|5|6           ");
+	printf("\n            7|8|9           ");
+	
+	//First horizontal line
+	for(col = 5; col < 96; col++){
+		VGA_plot_pixel(col, 40, WHITE);
+	}
+
+	//Second horizontal line
+	for(col = 5; col < 96; col++){
+		VGA_plot_pixel(col, 80, WHITE);
+	}
+
+	//Left vertical line
+	for(row = 5; row < 116; row++){
+		VGA_plot_pixel(33, row, WHITE);
+	}
+
+	//Right vertical line
+	for(row = 5; row < 116; row++){
+		VGA_plot_pixel(66, row, WHITE);
+	}
+
 
 	while(KBHIT()==0); //wait till keyboard press is detected
 		
@@ -126,7 +132,22 @@ void UART_ISR(void)
 {	
 
 	key=UartGetc();	
-	printf("%c", key);	
+
+	while(1)
+		{
+			while(KBHIT()==0);
+		
+			key = UartGetc();
+			
+			if (key == ONE){
+				printf("Key 1 pressed\n");
+			}else if(key == TWO){
+				printf("key 2 pressed\n");
+			}else{
+				printf("Different key pressed\n");
+			}
+				
+		}
 }
  
 
