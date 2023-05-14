@@ -1,0 +1,45 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Fri May 20 13:36:49 2022
+# Process ID: 10628
+# Current directory: C:/Users/ASUS/Desktop/277A/Final Project/lab7.1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent20184 C:\Users\ASUS\Desktop\277A\Final Project\lab7.1\lab7.1.xpr
+# Log file: C:/Users/ASUS/Desktop/277A/Final Project/lab7.1/vivado.log
+# Journal file: C:/Users/ASUS/Desktop/277A/Final Project/lab7.1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/ASUS/Desktop/277A/Final Project/lab7.1/lab7.1.xpr}
+update_compile_order -fileset sources_1
+source update_bitstream.tcl
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/ASUS/Desktop/277A/Final Project/lab7.1/reflash.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/ASUS/Desktop/277A/Final Project/lab7.1/reflash.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+source update_bitstream.tcl
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/ASUS/Desktop/277A/Final Project/lab7.1/reflash.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+close_hw_manager
+source update_bitstream.tcl
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/ASUS/Desktop/277A/Final Project/lab7.1/reflash.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/ASUS/Desktop/277A/Final Project/lab7.1/reflash.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]

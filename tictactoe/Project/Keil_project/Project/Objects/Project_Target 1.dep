@@ -1,0 +1,48 @@
+Dependencies for Project 'Project', Target 'Target 1': (DO NOT MODIFY !)
+CompilerVersion: 5060960::V5.06 update 7 (build 960)::.\ARM_Compiler_5.06u7
+F (.\Application\main.c)(0x6460585A)(-c --cpu Cortex-M0 -D__EVAL --li -g -O0 --apcs=interwork --split_sections -I .\core -I .\device -I .\Application-I.\RTE\_Target_1-IC:\Users\vthir\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\vthir\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\Device\ARM\ARMCM0\Include-D__UVISION_VERSION="538" -D_RTE_ -DARMCM0 -D_RTE_-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
+I (.\device\EDK_CM0.h)(0x646017F7)
+I (.\core\core_cm0.h)(0x646017F6)
+I (C:\Keil_v5\ARM\ARM_Compiler_5.06u7\include\stdint.h)(0x5E8F0FB2)
+I (.\core\core_cmInstr.h)(0x646017F6)
+I (.\core\core_cmFunc.h)(0x646017F6)
+I (.\device\edk_driver.h)(0x646017F7)
+I (.\device\edk_api.h)(0x6460559D)
+I (C:\Keil_v5\ARM\ARM_Compiler_5.06u7\include\stdio.h)(0x5E8F0FB2)
+F (.\core\core_cm0.h)(0x646017F6)()
+F (.\core\core_cmFunc.h)(0x646017F6)()
+F (.\core\core_cmInstr.h)(0x646017F6)()
+F (.\device\cm0dsasm.s)(0x646017F7)(--cpu Cortex-M0 --li --pd "__EVAL SETA 1" -g --apcs=interwork -I.\RTE\_Target_1-IC:\Users\vthir\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\vthir\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\Device\ARM\ARMCM0\Include--pd "__UVISION_VERSION SETA 538" --pd "_RTE_ SETA 1" --pd "ARMCM0 SETA 1" --pd "_RTE_ SETA 1"--list .\listings\cm0dsasm.lst --xref -o .\objects\cm0dsasm.o --depend .\objects\cm0dsasm.d)
+F (.\device\edk_api.c)(0x64605432)(-c --cpu Cortex-M0 -D__EVAL --li -g -O0 --apcs=interwork --split_sections -I .\core -I .\device -I .\Application-I.\RTE\_Target_1-IC:\Users\vthir\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\vthir\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\Device\ARM\ARMCM0\Include-D__UVISION_VERSION="538" -D_RTE_ -DARMCM0 -D_RTE_-o .\objects\edk_api.o --omf_browse .\objects\edk_api.crf --depend .\objects\edk_api.d)
+I (device\EDK_CM0.h)(0x646017F7)
+I (C:\Keil_v5\ARM\ARM_Compiler_5.06u7\include\string.h)(0x5E8F0FB2)
+I (device\edk_driver.h)(0x646017F7)
+I (.\core\core_cm0.h)(0x646017F6)
+I (C:\Keil_v5\ARM\ARM_Compiler_5.06u7\include\stdint.h)(0x5E8F0FB2)
+I (.\core\core_cmInstr.h)(0x646017F6)
+I (.\core\core_cmFunc.h)(0x646017F6)
+I (device\edk_api.h)(0x6460559D)
+F (.\device\edk_api.h)(0x6460559D)()
+F (.\device\EDK_CM0.h)(0x646017F7)()
+F (.\device\edk_driver.c)(0x646017F7)(-c --cpu Cortex-M0 -D__EVAL --li -g -O0 --apcs=interwork --split_sections -I .\core -I .\device -I .\Application-I.\RTE\_Target_1-IC:\Users\vthir\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\vthir\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\Device\ARM\ARMCM0\Include-D__UVISION_VERSION="538" -D_RTE_ -DARMCM0 -D_RTE_-o .\objects\edk_driver.o --omf_browse .\objects\edk_driver.crf --depend .\objects\edk_driver.d)
+I (device\EDK_CM0.h)(0x646017F7)
+I (C:\Keil_v5\ARM\ARM_Compiler_5.06u7\include\string.h)(0x5E8F0FB2)
+I (device\edk_driver.h)(0x646017F7)
+I (.\core\core_cm0.h)(0x646017F6)
+I (C:\Keil_v5\ARM\ARM_Compiler_5.06u7\include\stdint.h)(0x5E8F0FB2)
+I (.\core\core_cmInstr.h)(0x646017F6)
+I (.\core\core_cmFunc.h)(0x646017F6)
+I (device\edk_api.h)(0x6460559D)
+F (.\device\edk_driver.h)(0x646017F7)()
+F (.\device\retarget.c)(0x646017F7)(-c --cpu Cortex-M0 -D__EVAL --li -g -O0 --apcs=interwork --split_sections -I .\core -I .\device -I .\Application-I.\RTE\_Target_1-IC:\Users\vthir\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\vthir\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\Device\ARM\ARMCM0\Include-D__UVISION_VERSION="538" -D_RTE_ -DARMCM0 -D_RTE_-o .\objects\retarget.o --omf_browse .\objects\retarget.crf --depend .\objects\retarget.d)
+I (C:\Keil_v5\ARM\ARM_Compiler_5.06u7\include\stdio.h)(0x5E8F0FB2)
+I (C:\Keil_v5\ARM\ARM_Compiler_5.06u7\include\time.h)(0x5E8F0FB2)
+I (C:\Keil_v5\ARM\ARM_Compiler_5.06u7\include\rt_misc.h)(0x5E8F0FB2)
+I (C:\Keil_v5\ARM\ARM_Compiler_5.06u7\include\stddef.h)(0x5E8F0FB2)
+I (C:\Keil_v5\ARM\ARM_Compiler_5.06u7\include\stdint.h)(0x5E8F0FB2)
+I (device\EDK_CM0.h)(0x646017F7)
+I (device\edk_driver.h)(0x646017F7)
+I (.\core\core_cm0.h)(0x646017F6)
+I (.\core\core_cmInstr.h)(0x646017F6)
+I (.\core\core_cmFunc.h)(0x646017F6)
+I (device\edk_api.h)(0x6460559D)

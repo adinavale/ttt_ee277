@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# updatemem v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Fri May 20 15:07:56 2022
+# Process ID: 23064
+# Current directory: C:/Users/ASUS/Desktop/277A/Final Project/lab7.1
+# Command line: updatemem.exe -mode batch -source C:/Xilinx/Vivado/2021.1/scripts/updatemem/main.tcl -notrace -tclargs -meminfo bram.mmi -data code.mem -proc my_bram -bit C:/Users/ASUS/Desktop/277A/Final Project/lab7.1/lab7.1.runs/impl_1/AHBLITE_SYS.bit -out reflash.bit -force -debug
+# Log file: C:/Users/ASUS/Desktop/277A/Final Project/lab7.1/updatemem.log
+# Journal file: C:/Users/ASUS/Desktop/277A/Final Project/lab7.1\updatemem.jou
+#-----------------------------------------------------------
+source C:/Xilinx/Vivado/2021.1/scripts/updatemem/main.tcl -notrace

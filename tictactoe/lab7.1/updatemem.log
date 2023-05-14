@@ -1,0 +1,22 @@
+#-----------------------------------------------------------
+# updatemem v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Fri May 20 15:07:56 2022
+# Process ID: 23064
+# Current directory: C:/Users/ASUS/Desktop/277A/Final Project/lab7.1
+# Command line: updatemem.exe -mode batch -source C:/Xilinx/Vivado/2021.1/scripts/updatemem/main.tcl -notrace -tclargs -meminfo bram.mmi -data code.mem -proc my_bram -bit C:/Users/ASUS/Desktop/277A/Final Project/lab7.1/lab7.1.runs/impl_1/AHBLITE_SYS.bit -out reflash.bit -force -debug
+# Log file: C:/Users/ASUS/Desktop/277A/Final Project/lab7.1/updatemem.log
+# Journal file: C:/Users/ASUS/Desktop/277A/Final Project/lab7.1\updatemem.jou
+#-----------------------------------------------------------
+source C:/Xilinx/Vivado/2021.1/scripts/updatemem/main.tcl -notrace
+Command: update_mem -meminfo bram.mmi -data code.mem -proc my_bram -bit {C:/Users/ASUS/Desktop/277A/Final Project/lab7.1/lab7.1.runs/impl_1/AHBLITE_SYS.bit} -out reflash.bit -force -debug
+Loading bitfile C:/Users/ASUS/Desktop/277A/Final Project/lab7.1/lab7.1.runs/impl_1/AHBLITE_SYS.bit
+Loading data files...
+Updating memory content...
+Creating bitstream...
+Writing bitstream reflash.bit...
+0 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+update_mem completed successfully
+update_mem: Time (s): cpu = 00:00:13 ; elapsed = 00:00:12 . Memory (MB): peak = 1258.934 ; gain = 1177.164
+INFO: [Common 17-206] Exiting updatemem at Fri May 20 15:08:09 2022...

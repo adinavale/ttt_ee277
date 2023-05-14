@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Fri May 20 13:21:53 2022
+# Process ID: 16064
+# Current directory: C:/Users/ASUS/Downloads/Project/Project
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent19368 C:\Users\ASUS\Downloads\Project\Project\Project.xpr
+# Log file: C:/Users/ASUS/Downloads/Project/Project/vivado.log
+# Journal file: C:/Users/ASUS/Downloads/Project/Project\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/ASUS/Downloads/Project/Project/Project.xpr
+update_compile_order -fileset sources_1
+save_project_as project_final {C:/Users/ASUS/Desktop/277A/Final Project/project_final} -force
