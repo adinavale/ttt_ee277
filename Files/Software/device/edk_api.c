@@ -117,15 +117,30 @@ void display_X(int x, int y){
 	//Diagonal going from top left to bottom right
 	int cur_row = 0;
 	int i;
-	for(i = 0; i < x + 15; i++){
+	for(i = 0; i < 23; i++){
 		VGA_plot_pixel(i + x, y + cur_row, WHITE);
 		cur_row++;
 	}
 
 	//Diagonal going from bottom left to top right
 	cur_row = y + 14;
-	for(i = 0; i < x + 15; i++){
+	for(i = 0; i < 23; i++){
 		VGA_plot_pixel(i + x, y + cur_row, WHITE);
 		cur_row--;
 	}
+}
+
+void display_O(int x, int y){
+	//Horizontal row at top
+	int i;
+	for(i = 0; i < 23; i++){
+		VGA_plot_pixel(x + i, y, WHITE);
+		VGA_plot_pixel(x + i, y + 23, WHITE);
+	}
+
+	//Vertical lines on sides
+	for(i = 0; i < 24; i++){
+		VGA_plot_pixel(x, y + i, WHITE);
+		VGA_plot_pixel(x + 23, y + i, WHITE);
+	}			
 }

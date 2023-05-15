@@ -77,6 +77,8 @@ int KBHIT(void);							//Wait for keyboard hit
 
 void display_X(int x, int y);       //Displays a diagonal X in a single box for tic-tac-toe
 
+void display_O(int x, int y);       //Displays a circle
+
 extern unsigned char UartPutc(unsigned char my_ch);		//Retarget functions
 
 extern unsigned char VGAPutc(unsigned char my_ch);		//Retarget functions

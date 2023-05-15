@@ -8,10 +8,7 @@
 #include "edk_driver.h"
 #include "edk_api.h"
 
-#include <stdio.h>
-
-//Maximum snake length
-#define N 100							
+#include <stdio.h>							
 
 //Game region
 #define left_boundary 5
@@ -27,6 +24,7 @@ static int score1;
 static int score2;
 static int col, row;
 static int active_player;
+static int grid[9] = {0,0,0,0,0,0,0,0,0};
 
 
 //---------------------------------------------
@@ -140,12 +138,105 @@ void UART_ISR(void)
 			key = UartGetc();
 			
 			if (key == ONE){
-				printf("Key 1 pressed\n");
-				display_X(10, 10);
+				if(active_player == 1){
+					display_X(8, 8);
+					grid[0] = 1;
+				}else if(active_player == 2){
+					display_O(8, 8);
+					grid[0] = 2;
+				}
 			}else if(key == TWO){
-				printf("key 2 pressed\n");
+				if(active_player == 1){
+					display_X(36, 8);
+					grid[1] = 1;
+				}else{
+					display_O(36, 8);
+					grid[1] = 2;
+				}
+			}else if(key == THREE){
+				if(active_player == 1){
+					display_X(69, 8);
+					grid[2] = 1;
+				}else{
+					display_O(69, 8);
+					grid[2] = 2;
+				}
+			} else if (key == FOUR){
+				if(active_player == 1){
+					display_X(8, 47);
+					grid[3] = 1;
+				}else{
+					display_O(8, 47);
+					grid[3] = 2;
+				}
+			}else if(key == FIVE){
+				if(active_player == 1){
+					display_X(36, 47);
+					grid[4] = 1;
+				}else{
+					display_O(36, 47);
+					grid[4] = 2;
+				}
+			}else if(key == SIX){
+				if(active_player == 1){
+					display_X(69, 47);
+					grid[5] = 1;
+				}else{
+					display_O(69, 47);
+					grid[6] = 1;
+				}
+			}else if(key == SEVEN){
+				if(active_player == 1){
+					display_X(8, 84);
+					grid[6] = 1;
+				}else{
+					display_O(8, 84);
+					grid[6] = 1;
+				}
+			}else if(key == EIGHT){
+				if(active_player == 1){
+					display_X(36, 84);
+					grid[7] = 1;
+				}else{
+					display_O(36, 84);
+					grid[7] = 2;
+				}
+			}else if(key == NINE){
+				if(active_player == 1){
+					display_X(69, 84);
+					grid[8] = 1;
+				}else{
+					display_O(69, 84);
+					grid[8] = 2;
+				}
 			}else{
-				printf("Different key pressed\n");
+				printf("Invalid key pressed\n");
+			}
+
+			if(active_player == 1){
+				active_player = 2;
+				printf("Player 2 turn\n");
+			}else if(active_player == 2){
+				active_player = 1;
+				printf("Player 1 turn\n");
+			}
+
+			//Check for horizontal win scenario
+			for(int p = 0; p < (sizeof(grid) / sizeof(grid[0])); p = p + 3){
+				if( (grid[p] == 1) && (grid[p + 1] == 1) && (grid[p + 2] == 1) ){
+					printf("Player 1 wins!");
+				}else if( (grid[p] == 2) && (grid[p + 1] == 2) && (grid[p + 2] == 2) ){
+					printf("Player 2 wins!");
+				}
+			}
+
+			//Check for vertical win scenario
+			for(int p = 0; p < (sizeof(grid) / sizeof(grid[0])); p = p + 3){
+				if( (grid[p] == 1) && (grid[p + 3] == 1) && (grid[p + 6] == 1) ){
+					printf("Player 1 wins!");
+				}else if( (grid[p] == 2) && (grid[p + 3] == 2) && (grid[p + 6] == 2) ){
+					printf("Player 2 wins!");
+				}
 			}
 				
 		}
